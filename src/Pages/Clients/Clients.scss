@@ -1,8 +1,29 @@
+.slide-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px; /* Increased horizontal space between logos */
+  height: 300px; /* Adjust as needed for your logo size */
+  animation: 15s slide infinite linear;
+  /* display: inline-block; */
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 350px;
+}
+
+.slide img {
+  max-height: 90%;
+  object-fit: contain;
+}
 @keyframes slide {
   from {
     transform: translateX(0);
   }
-
   to {
     transform: translateX(-100%);
   }
@@ -11,13 +32,17 @@
 .slider {
   background: var(--white);
   overflow: hidden;
-  //   padding-top: 1rem;
-  //   padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 1rem; */
+  /* padding-bottom: 1rem; */
   white-space: nowrap;
 }
-
+// ...existing code...
 .slider:hover .slide-track {
   animation-play-state: paused;
+
 }
 
 .slide-track {

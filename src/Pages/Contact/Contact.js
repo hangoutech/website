@@ -132,7 +132,7 @@ const Contact = () => {
                     <span className=" me-3">
                       <TbMailFilled color="var(--white)" size={22} />
                     </span>
-                    help.hangoutech@gmail.com
+                    support@hangoutech.com
                   </a>
                 </h5>
               </div>
